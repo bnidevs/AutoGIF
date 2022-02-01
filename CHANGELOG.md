@@ -1,3 +1,7 @@
+bnidevs - 2/1/22 - [`03e591d8e8793b1e06af7278085aece11a30c20c`](https://github.com/bnidevs/AutoGIF/commit/03e591d8e8793b1e06af7278085aece11a30c20c)
+
+add python linter
+
 bnidevs - 2/1/22 - [`b9933ad5aee007b8a75c326dc2fd73fb5a7c1153`](https://github.com/bnidevs/AutoGIF/commit/b9933ad5aee007b8a75c326dc2fd73fb5a7c1153)
 
 add screen grab into mini window inital program
