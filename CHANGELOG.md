@@ -1,3 +1,10 @@
+bnidevs - 2/1/22 - [`58e43020d7479cefbe32e3ed339bec3971ec6376`](https://github.com/bnidevs/AutoGIF/commit/58e43020d7479cefbe32e3ed339bec3971ec6376)
+
+added requirements installation to pylint action
+refactored code into main function
+added docstrings and pylintrc
+ - pylintrc will ignore cv2 c bindings
+
 bnidevs - 2/1/22 - [`3883be4b74f095e38ce7785e5f63257b32e44aaf`](https://github.com/bnidevs/AutoGIF/commit/3883be4b74f095e38ce7785e5f63257b32e44aaf)
 
 attempt lint fix
