@@ -1,3 +1,8 @@
+bnidevs - 2/1/22 - [`3883be4b74f095e38ce7785e5f63257b32e44aaf`](https://github.com/bnidevs/AutoGIF/commit/3883be4b74f095e38ce7785e5f63257b32e44aaf)
+
+attempt lint fix
+added requirements.txt (mss, opencv, numpy)
+
 bnidevs - 2/1/22 - [`03e591d8e8793b1e06af7278085aece11a30c20c`](https://github.com/bnidevs/AutoGIF/commit/03e591d8e8793b1e06af7278085aece11a30c20c)
 
 add python linter
