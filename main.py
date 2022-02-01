@@ -1,11 +1,11 @@
-"""temporary main docstring"""
+"""temporary file docstring"""
 
 import numpy as np
 import cv2
 from mss import mss
 
 def main():
-
+    """main function"""
     sct = mss()
 
     cv2.namedWindow("Live", cv2.WINDOW_NORMAL)
