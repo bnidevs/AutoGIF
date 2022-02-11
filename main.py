@@ -45,6 +45,8 @@ def main():
         countdown -= 1
         if cv2.waitKey(1) == ord('q'):
         	break
+        if cv2.getWindowProperty('Live',cv2.WND_PROP_VISIBLE) == 0:
+            break
 
     cv2.destroyAllWindows()
 
