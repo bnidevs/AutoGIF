@@ -12,6 +12,8 @@
 		8002BBA527B79BF400F19B72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8002BBA427B79BF400F19B72 /* Preview Assets.xcassets */; };
 		8002BBAD27B79FDB00F19B72 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */; };
 		8002BBAF27B7A09A00F19B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */; };
+		80954D6A27B81F8C00F58202 /* AutoGIFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80954D6927B81F8C00F58202 /* AutoGIFApp.swift */; };
+		80954D6C27B8262500F58202 /* Functionals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80954D6B27B8262500F58202 /* Functionals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		8002BBA627B79BF400F19B72 /* AutoGIF_Spooler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoGIF_Spooler.entitlements; sourceTree = "<group>"; };
 		8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80954D6927B81F8C00F58202 /* AutoGIFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoGIFApp.swift; sourceTree = "<group>"; };
+		80954D6B27B8262500F58202 /* Functionals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functionals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				8002BBA327B79BF400F19B72 /* Preview Content */,
 				8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */,
 				8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */,
+				80954D6927B81F8C00F58202 /* AutoGIFApp.swift */,
+				80954D6B27B8262500F58202 /* Functionals.swift */,
 			);
 			path = "AutoGIF Spooler";
 			sourceTree = "<group>";
@@ -145,6 +151,8 @@
 				8002BBAF27B7A09A00F19B72 /* AppDelegate.swift in Sources */,
 				8002BBA027B79BF300F19B72 /* ContentView.swift in Sources */,
 				8002BBAD27B79FDB00F19B72 /* StatusBarController.swift in Sources */,
+				80954D6A27B81F8C00F58202 /* AutoGIFApp.swift in Sources */,
+				80954D6C27B8262500F58202 /* Functionals.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +290,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AutoGIF-Spooler-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +320,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AutoGIF-Spooler-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
