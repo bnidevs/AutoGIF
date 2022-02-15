@@ -22,19 +22,22 @@ def main():
         frame = np.array(sct_img)
 
         frame = cv2.resize(frame, (720, 480))
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
 
-        #FRAME_LIST.append(frame)
+        FRAME_LIST.append(frame)
 
         cv2.imshow('Live', frame)
         cv2.resizeWindow("Live", 480, 270)
 
         countdown -= 1
-        if cv2.waitKey(1) == ord('q'):
+        cv2.waitKey(1)
+        
+        if cv2.getWindowProperty('Live', cv2.WND_PROP_VISIBLE) == 0:
             break
 
     cv2.destroyAllWindows()
-    #imageio.mimsave('test.gif', FRAME_LIST, fps=60)
+    imageio.mimsave('test.gif', FRAME_LIST, fps=60)
 
 if __name__ == "__main__":
     main()
