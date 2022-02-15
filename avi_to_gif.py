@@ -21,5 +21,4 @@ def convertVideoToGifFile(inputFile, outputFile=None):
 
 #Convert Input Files
 
-convertVideoToGifFile("sample_960x540.avi")
-convertVideoToGifFile("SampleVideo_1280x720_1mb.mp4", "SampleVideo.gif")
+convertVideoToGifFile("test2.avi")
