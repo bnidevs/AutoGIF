@@ -9,9 +9,8 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Button(action: startStop) {
-            Text("Test")
-        }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        Text("Hello, World!")
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
     }
 }
 
