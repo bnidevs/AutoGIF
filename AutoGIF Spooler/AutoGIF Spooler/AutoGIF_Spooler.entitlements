@@ -4,9 +4,11 @@
 <dict>
 	<key>com.apple.security.app-sandbox</key>
 	<true/>
-	<key>com.apple.security.files.user-selected.read-only</key>
+	<key>com.apple.security.assets.movies.read-write</key>
 	<true/>
-	<key>Application is agent (UIElement)</key>
+	<key>com.apple.security.device.camera</key>
+	<true/>
+	<key>com.apple.security.files.user-selected.read-only</key>
 	<true/>
 </dict>
 </plist>

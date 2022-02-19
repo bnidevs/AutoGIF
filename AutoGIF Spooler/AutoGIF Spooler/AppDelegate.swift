@@ -9,15 +9,19 @@ import Foundation
 import Cocoa
 import SwiftUI
 
-@main
-class AppDelegate: NSObject, NSApplicationDelegate {
+class AppData: ObservableObject {
+    @Published var recorder: Recorder = Recorder.init()
+}
 
+class AppDelegate: NSObject, NSApplicationDelegate {
+    
     var statusBar: StatusBarController?
     var popover = NSPopover.init()
+    
+//    @ObservedObject var appdata: AppData = AppData.init()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         let contentView = ContentView()
-        popover.contentSize = NSSize(width: 360, height: 360)
         popover.contentViewController = NSHostingController(rootView: contentView)
         statusBar = StatusBarController.init(popover)
     }

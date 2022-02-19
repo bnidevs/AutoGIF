@@ -12,6 +12,9 @@
 		8002BBA527B79BF400F19B72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8002BBA427B79BF400F19B72 /* Preview Assets.xcassets */; };
 		8002BBAD27B79FDB00F19B72 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */; };
 		8002BBAF27B7A09A00F19B72 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */; };
+		8021E1E827C046A4003C69CC /* AutoGIFApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8021E1E727C046A4003C69CC /* AutoGIFApp.swift */; };
+		8021E1F027C0C320003C69CC /* Aperture in Frameworks */ = {isa = PBXBuildFile; productRef = 8021E1EF27C0C320003C69CC /* Aperture */; };
+		80ADE1E927C15EE000C664B9 /* Recorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80ADE1E827C15EE000C664B9 /* Recorder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		8002BBA627B79BF400F19B72 /* AutoGIF_Spooler.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AutoGIF_Spooler.entitlements; sourceTree = "<group>"; };
 		8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 		8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		8021E1E727C046A4003C69CC /* AutoGIFApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoGIFApp.swift; sourceTree = "<group>"; };
+		8021E1EB27C04757003C69CC /* AutoGIF-Spooler-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AutoGIF-Spooler-Info.plist"; sourceTree = SOURCE_ROOT; };
+		80ADE1E827C15EE000C664B9 /* Recorder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recorder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8021E1F027C0C320003C69CC /* Aperture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,12 +61,15 @@
 		8002BB9C27B79BF300F19B72 /* AutoGIF Spooler */ = {
 			isa = PBXGroup;
 			children = (
+				80ADE1E827C15EE000C664B9 /* Recorder.swift */,
+				8021E1EB27C04757003C69CC /* AutoGIF-Spooler-Info.plist */,
 				8002BB9F27B79BF300F19B72 /* ContentView.swift */,
 				8002BBA127B79BF400F19B72 /* Assets.xcassets */,
 				8002BBA627B79BF400F19B72 /* AutoGIF_Spooler.entitlements */,
 				8002BBA327B79BF400F19B72 /* Preview Content */,
 				8002BBAC27B79FDB00F19B72 /* StatusBarController.swift */,
 				8002BBAE27B7A09A00F19B72 /* AppDelegate.swift */,
+				8021E1E727C046A4003C69CC /* AutoGIFApp.swift */,
 			);
 			path = "AutoGIF Spooler";
 			sourceTree = "<group>";
@@ -88,6 +98,9 @@
 			dependencies = (
 			);
 			name = "AutoGIF Spooler";
+			packageProductDependencies = (
+				8021E1EF27C0C320003C69CC /* Aperture */,
+			);
 			productName = "AutoGIF Spooler";
 			productReference = 8002BB9A27B79BF300F19B72 /* AutoGIF Spooler.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +129,9 @@
 				Base,
 			);
 			mainGroup = 8002BB9127B79BF300F19B72;
+			packageReferences = (
+				8021E1EE27C0C320003C69CC /* XCRemoteSwiftPackageReference "Aperture" */,
+			);
 			productRefGroup = 8002BB9B27B79BF300F19B72 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,9 +158,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80ADE1E927C15EE000C664B9 /* Recorder.swift in Sources */,
 				8002BBAF27B7A09A00F19B72 /* AppDelegate.swift in Sources */,
 				8002BBA027B79BF300F19B72 /* ContentView.swift in Sources */,
 				8002BBAD27B79FDB00F19B72 /* StatusBarController.swift in Sources */,
+				8021E1E827C046A4003C69CC /* AutoGIFApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +300,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AutoGIF-Spooler-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -311,6 +330,7 @@
 				ENABLE_PREVIEWS = YES;
 				GCC_NO_COMMON_BLOCKS = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AutoGIF-Spooler-Info.plist";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -346,6 +366,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8021E1EE27C0C320003C69CC /* XCRemoteSwiftPackageReference "Aperture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/wulkano/Aperture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8021E1EF27C0C320003C69CC /* Aperture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8021E1EE27C0C320003C69CC /* XCRemoteSwiftPackageReference "Aperture" */;
+			productName = Aperture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8002BB9227B79BF300F19B72 /* Project object */;
 }
