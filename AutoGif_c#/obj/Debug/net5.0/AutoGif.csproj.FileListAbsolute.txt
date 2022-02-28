@@ -1,0 +1,16 @@
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.csprojAssemblyReference.cache
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.AssemblyInfoInputs.cache
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.AssemblyInfo.cs
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.csproj.CoreCompileInputs.cache
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\AutoGif.exe
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\AutoGif.deps.json
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\AutoGif.runtimeconfig.json
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\AutoGif.runtimeconfig.dev.json
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\AutoGif.dll
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\ref\AutoGif.dll
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\bin\Debug\net5.0\AutoGif.pdb
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.dll
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\ref\AutoGif.dll
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.pdb
+C:\Users\Roller Toaster\Dropbox\RCOS\AutoGif\AutoGif_c#\obj\Debug\net5.0\AutoGif.genruntimeconfig.cache
