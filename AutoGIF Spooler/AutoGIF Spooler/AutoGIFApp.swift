@@ -15,6 +15,9 @@ struct AutoGIFApp: App {
     
     var body: some Scene {
         WindowGroup {
+            VStack(){
+                // this needs to be here so that the window does not display
+            }
         }
     }
     

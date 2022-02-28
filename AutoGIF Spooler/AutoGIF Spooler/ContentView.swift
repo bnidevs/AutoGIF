@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding public var recording: Bool
+    
+    @State public var recordingState = false
     @State public var fileType = true
-    @State public var recording = false
     @State public var writing = false
     
     var body: some View {
@@ -22,15 +24,15 @@ struct ContentView: View {
                     Text("Recording")
                         .font(.system(size: 16, weight: .semibold))
                     Circle()
-                        .fill(recording ? Color.red : Color.gray)
+                        .fill(recordingState ? Color.red : Color.gray)
                         .frame(width: 10, height: 10)
                 }
                     .frame(width: 200, height: 20, alignment: .topLeading)
-                Button(recording ? "Stop" : "Start", action: callSS)
+                Button(recordingState ? "Stop" : "Start", action: callSS)
             }
                 .frame(width: 200, height: 50)
                 .padding(10)
-                .background(Color.black)
+                .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
                 .cornerRadius(5)
             VStack(alignment: .center){
                 HStack(alignment: .center, spacing: 10){
@@ -51,7 +53,7 @@ struct ContentView: View {
             }
                 .frame(width: 200, height: 50)
                 .padding(10)
-                .background(Color.black)
+                .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
                 .cornerRadius(5)
             HStack(alignment: .center){
                 Text("Status: " + (writing ? "Writing" : "Idle"))
@@ -69,6 +71,8 @@ struct ContentView: View {
     
     func callSS(){
         recording = !recording
+        recordingState = recording
+        
 //        apd.recorder.startStop()
     }
     

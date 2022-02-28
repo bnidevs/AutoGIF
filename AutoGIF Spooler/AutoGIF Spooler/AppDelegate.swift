@@ -10,7 +10,8 @@ import Cocoa
 import SwiftUI
 
 class AppData: ObservableObject {
-    @Published var recorder: Recorder = Recorder.init()
+    // @Published var recorder: Recorder = Recorder.init()
+    @Published var recording: Bool = false
 }
 
 class AppDelegate: NSObject, NSApplicationDelegate {
@@ -18,10 +19,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var statusBar: StatusBarController?
     var popover = NSPopover.init()
     
-//    @ObservedObject var appdata: AppData = AppData.init()
+    @ObservedObject var appdata: AppData = AppData.init()
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        let contentView = ContentView()
+        let contentView = ContentView(recording: $appdata.recording)
         popover.contentViewController = NSHostingController(rootView: contentView)
         statusBar = StatusBarController.init(popover)
     }
