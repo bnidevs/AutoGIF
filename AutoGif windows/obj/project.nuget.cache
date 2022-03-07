@@ -1,8 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "9CmKXB+gT+v6a5trXZD+A8mOS58pdSy76FrlQiJkqsEGfSbD8KbxbDdcVeygk5jwHcfdwEck3oqnER+n4u2tdg==",
+  "dgSpecHash": "9YW1M5KKTyBzv8GxieqRWpCzqY05NRUyhgHt98lOhBbFTnPHhUii/D7zonml/BDp0+8PWOlOsViOPOgkWZNppg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Henry\\.nuget\\packages\\accord\\3.8.0\\accord.3.8.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\accord.video\\3.8.0\\accord.video.3.8.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\accord.video.ffmpeg\\3.8.0\\accord.video.ffmpeg.3.8.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\gifmotion\\1.0.4\\gifmotion.1.0.4.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.netcore.platforms\\2.0.0\\microsoft.netcore.platforms.2.0.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
+    "C:\\Users\\Henry\\.nuget\\packages\\system.drawing.common\\4.5.0\\system.drawing.common.4.5.0.nupkg.sha512"
+  ],
   "logs": []
 }

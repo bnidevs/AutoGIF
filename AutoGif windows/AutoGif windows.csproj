@@ -8,4 +8,9 @@
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Accord.Video.FFMPEG" Version="3.8.0" />
+    <PackageReference Include="GifMotion" Version="1.0.4" />
+  </ItemGroup>
+
 </Project>
