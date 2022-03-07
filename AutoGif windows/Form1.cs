@@ -16,10 +16,18 @@ namespace AutoGif_windows
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            if (button1.Text.Equals("Start Recording"))
+            {
+                button1.Text = "Stop Recording";
+                button1.BackColor = System.Drawing.Color.Red;
+            } else
+            {
+                button1.Text = "Start Recording";
+                button1.BackColor = System.Drawing.Color.DarkSeaGreen;
+            }
+            
         }
     }
 }

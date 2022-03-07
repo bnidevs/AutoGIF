@@ -8,24 +8,19 @@
     "net5.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Roller Toaster\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Henry\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Roller Toaster\\Dropbox\\RCOS\\AutoGif\\AutoGif windows\\AutoGif windows.csproj",
+      "projectUniqueName": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj",
       "projectName": "AutoGif windows",
-      "projectPath": "C:\\Users\\Roller Toaster\\Dropbox\\RCOS\\AutoGif\\AutoGif windows\\AutoGif windows.csproj",
-      "packagesPath": "C:\\Users\\Roller Toaster\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Roller Toaster\\Dropbox\\RCOS\\AutoGif\\AutoGif windows\\obj\\",
+      "projectPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\AutoGif windows.csproj",
+      "packagesPath": "C:\\Users\\Henry\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Henry\\source\\repos\\AutoGIF\\AutoGif windows\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Roller Toaster\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Henry\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -68,7 +63,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200\\RuntimeIdentifierGraph.json"
       }
     }
   }

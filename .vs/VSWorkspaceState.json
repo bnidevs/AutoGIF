@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\.github\\workflows",
-    "\\AutoGif_c#"
+    "\\AutoGif windows"
   ],
-  "SelectedNode": "\\AutoGif_c#\\Program.cs",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
