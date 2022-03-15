@@ -23,7 +23,6 @@ C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\Aut
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\AutoGif windows.dll
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\AutoGif windows.pdb
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.csproj.AssemblyReference.cache
-C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif_windows.Form1.resources
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.csproj.GenerateResource.cache
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.AssemblyInfoInputs.cache
@@ -34,3 +33,17 @@ C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\ref
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.pdb
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.genruntimeconfig.cache
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\ref\AutoGif windows.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif_windows.main_window.resources
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\avcodec-57.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\avdevice-57.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\avfilter-6.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\avformat-57.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\avutil-55.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\postproc-54.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\swresample-2.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\swscale-4.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\Accord.dll.config
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\Accord.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\Accord.Video.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\GifMotion.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.csproj.CopyComplete

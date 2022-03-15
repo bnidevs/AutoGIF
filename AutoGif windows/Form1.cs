@@ -10,26 +10,26 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-using Accord.Video.FFMPEG;
-
 namespace AutoGif_windows
 {
     public partial class main_window : Form
     {
+        bool recording = false;
         public main_window()
         {
             InitializeComponent();
         }
-        VideoFileWriter
         private void button1_Click(object sender, EventArgs e)
         {
-            if (button1.Text.Equals("Start Recording"))
+            if (recording)
             {
-                button1.Text = "Stop Recording";
-                button1.BackColor = System.Drawing.Color.Red;
-            } else {
                 button1.Text = "Start Recording";
                 button1.BackColor = System.Drawing.Color.DarkSeaGreen;
+                recording = false;
+            } else {
+                button1.Text = "Stop Recording";
+                button1.BackColor = System.Drawing.Color.Red;
+                recording = true;
             }
             
         }
