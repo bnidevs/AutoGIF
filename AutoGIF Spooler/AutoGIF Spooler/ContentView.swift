@@ -10,6 +10,7 @@ import Aperture
 
 struct ContentView: View {
     @Binding public var recorder: Recorder
+    @Binding public var sbc: StatusBarController?
     
     @State public var recordingState = false
     @State public var fileType = true
@@ -57,26 +58,40 @@ struct ContentView: View {
                 .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
                 .cornerRadius(5)
             HStack(alignment: .center){
-                Text("Status: " + (writing ? "Writing" : "Idle"))
-                    .font(.system(size: 14))
                 Spacer()
-                Button("Quit", action: {NSApp.terminate(self)})
+                Button("Quit", action: menuQuit)
                     .disabled(writing)
             }
-                .frame(width: 200, height: 20, alignment: .center)
+                .frame(width: 200, height: 10, alignment: .center)
                 .padding(10)
         }
-            .frame(width: 200, height: 220, alignment: .center)
+            .frame(width: 200, height: 210, alignment: .center)
             .padding(20)
     }
     
     func callSS(){
         recordingState = !recordingState
         recorder.startStop()
+        if(recordingState){
+            sbc?.toggleImg()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                sbc?.togglePopover(sender: 1 as NSNumber)
+            }
+        }else{
+            sbc?.toggleImg()
+        }
     }
     
     func switchFT(){
         fileType = !fileType
 //        apd.recorder.changeFileType()
+    }
+    
+    func menuQuit(){
+        recorder.startStop()
+        while(recorder.recorder.isRecording){
+            
+        }
+        NSApp.terminate(self)
     }
 }

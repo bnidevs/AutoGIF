@@ -8,5 +8,11 @@
 	<string>AutoGIF needs access to your microphone (not because we use it but a dependency that we rely on needs it)</string>
 	<key>NSCameraUsageDescription</key>
 	<string>AutoGIF needs access to your camera and screen</string>
+	<key>NSSupportsSuddenTermination</key>
+	<false/>
+	<key>NSSupportsAutomaticTermination</key>
+	<false/>
+	<key>LSMultipleInstancesProhibited</key>
+	<true/>
 </dict>
 </plist>
