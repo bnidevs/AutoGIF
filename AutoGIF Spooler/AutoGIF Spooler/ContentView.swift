@@ -6,9 +6,10 @@
 //
 
 import SwiftUI
+import Aperture
 
 struct ContentView: View {
-    @Binding public var recording: Bool
+    @Binding public var recorder: Recorder
     
     @State public var recordingState = false
     @State public var fileType = true
@@ -70,10 +71,8 @@ struct ContentView: View {
     }
     
     func callSS(){
-        recording = !recording
-        recordingState = recording
-        
-//        apd.recorder.startStop()
+        recordingState = !recordingState
+        recorder.startStop()
     }
     
     func switchFT(){
