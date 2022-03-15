@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <PackageReference Include="Accord.Video.FFMPEG" Version="3.8.0" />
+    <PackageReference Include="AForge.Video" Version="2.2.5" />
     <PackageReference Include="GifMotion" Version="1.0.4" />
   </ItemGroup>
 

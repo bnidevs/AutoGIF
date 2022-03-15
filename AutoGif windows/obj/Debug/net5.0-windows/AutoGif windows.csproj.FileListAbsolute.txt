@@ -47,3 +47,5 @@ C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\Acc
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\Accord.Video.dll
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\GifMotion.dll
 C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\obj\Debug\net5.0-windows\AutoGif windows.csproj.CopyComplete
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\AForge.dll
+C:\Users\Henry\source\repos\AutoGIF\AutoGif windows\bin\Debug\net5.0-windows\AForge.Video.dll
