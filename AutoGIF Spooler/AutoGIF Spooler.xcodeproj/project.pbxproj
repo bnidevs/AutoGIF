@@ -373,7 +373,7 @@
 			repositoryURL = "https://github.com/wulkano/Aperture";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
+				minimumVersion = 2.0.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */

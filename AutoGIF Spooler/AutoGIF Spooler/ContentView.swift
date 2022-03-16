@@ -6,10 +6,14 @@
 //
 
 import SwiftUI
+import Aperture
 
 struct ContentView: View {
+    @Binding public var recorder: Recorder
+    @Binding public var sbc: StatusBarController?
+    
+    @State public var recordingState = false
     @State public var fileType = true
-    @State public var recording = false
     @State public var writing = false
     
     var body: some View {
@@ -22,15 +26,15 @@ struct ContentView: View {
                     Text("Recording")
                         .font(.system(size: 16, weight: .semibold))
                     Circle()
-                        .fill(recording ? Color.red : Color.gray)
+                        .fill(recordingState ? Color.red : Color.gray)
                         .frame(width: 10, height: 10)
                 }
                     .frame(width: 200, height: 20, alignment: .topLeading)
-                Button(recording ? "Stop" : "Start", action: callSS)
+                Button(recordingState ? "Stop" : "Start", action: callSS)
             }
                 .frame(width: 200, height: 50)
                 .padding(10)
-                .background(Color.black)
+                .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
                 .cornerRadius(5)
             VStack(alignment: .center){
                 HStack(alignment: .center, spacing: 10){
@@ -51,29 +55,43 @@ struct ContentView: View {
             }
                 .frame(width: 200, height: 50)
                 .padding(10)
-                .background(Color.black)
+                .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
                 .cornerRadius(5)
             HStack(alignment: .center){
-                Text("Status: " + (writing ? "Writing" : "Idle"))
-                    .font(.system(size: 14))
                 Spacer()
-                Button("Quit", action: {NSApp.terminate(self)})
+                Button("Quit", action: menuQuit)
                     .disabled(writing)
             }
-                .frame(width: 200, height: 20, alignment: .center)
+                .frame(width: 200, height: 10, alignment: .center)
                 .padding(10)
         }
-            .frame(width: 200, height: 220, alignment: .center)
+            .frame(width: 200, height: 210, alignment: .center)
             .padding(20)
     }
     
     func callSS(){
-        recording = !recording
-//        apd.recorder.startStop()
+        recordingState = !recordingState
+        recorder.startStop()
+        if(recordingState){
+            sbc?.toggleImg()
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {
+                sbc?.togglePopover(sender: 1 as NSNumber)
+            }
+        }else{
+            sbc?.toggleImg()
+        }
     }
     
     func switchFT(){
         fileType = !fileType
 //        apd.recorder.changeFileType()
+    }
+    
+    func menuQuit(){
+        recorder.startStop()
+        while(recorder.recorder.isRecording){
+            
+        }
+        NSApp.terminate(self)
     }
 }
