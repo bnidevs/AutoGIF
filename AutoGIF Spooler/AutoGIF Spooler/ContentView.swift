@@ -28,30 +28,17 @@ struct ContentView: View {
                     Circle()
                         .fill(recordingState ? Color.red : Color.gray)
                         .frame(width: 10, height: 10)
+                    Spacer()
+                    Button(recordingState ? "Stop" : "Start", action: callSS)
+                }
+                    .frame(width: 200, height: 25, alignment: .topLeading)
+                HStack(alignment: .center, spacing: 10){
+                    Text("Saves: ")
+                        .bold()
+                    Spacer()
+                    Text("/Users/" + NSUserName() + "/Movies")
                 }
                     .frame(width: 200, height: 20, alignment: .topLeading)
-                Button(recordingState ? "Stop" : "Start", action: callSS)
-            }
-                .frame(width: 200, height: 50)
-                .padding(10)
-                .background(Color.init(red: 0, green: 0, blue: 0, opacity: 0.3))
-                .cornerRadius(5)
-            VStack(alignment: .center){
-                HStack(alignment: .center, spacing: 10){
-                    Text("File Output")
-                        .font(.system(size: 16, weight: .semibold))
-                }
-                    .frame(width: 200, height: 20, alignment: .topLeading)
-                HStack(alignment: .center, spacing: 10){
-                    HStack(alignment: .center) {
-                        Text(fileType ? "GIF" : "WEBM")
-                            .font(.system(size: 14))
-                    }
-                        .frame(width: 50, height: 20, alignment: .center)
-                    Toggle("", isOn: $fileType)
-                        .toggleStyle(SwitchToggleStyle())
-                }
-                    .frame(width: 200, height: 20, alignment: .center)
             }
                 .frame(width: 200, height: 50)
                 .padding(10)
@@ -65,7 +52,7 @@ struct ContentView: View {
                 .frame(width: 200, height: 10, alignment: .center)
                 .padding(10)
         }
-            .frame(width: 200, height: 210, alignment: .center)
+            .frame(width: 200, height: 130, alignment: .center)
             .padding(20)
     }
     
