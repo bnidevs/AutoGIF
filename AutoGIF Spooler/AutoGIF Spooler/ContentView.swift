@@ -36,7 +36,11 @@ struct ContentView: View {
                     Text("Saves: ")
                         .bold()
                     Spacer()
-                    Text("/Users/" + NSUserName() + "/Movies")
+                    Link("/Users/" + NSUserName() + "/Movies", destination: URL(fileURLWithPath: FileManager.default.urls(for: .moviesDirectory, in: .userDomainMask)[0].absoluteString))
+                        .environment(\.openURL, OpenURLAction { url in
+                            NSWorkspace.shared.selectFile(nil, inFileViewerRootedAtPath: "/Users/" + NSUserName() + "/Movies")
+                            return .handled
+                        })
                 }
                     .frame(width: 200, height: 20, alignment: .topLeading)
             }
