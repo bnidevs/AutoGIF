@@ -39,7 +39,9 @@ namespace AutoGif_windows
                         using (img) 
                         {
                             // Add the image to gifEncoder with default Quality
-                            gifCreator.AddFrame(img);
+                            Console.WriteLine(img);
+                            Console.WriteLine("HULLO GAMERS");
+                            //gifCreator.AddFrame(img);
                         } // Image disposed
                     }
                     

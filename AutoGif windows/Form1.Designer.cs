@@ -29,14 +29,13 @@ namespace AutoGif_windows
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.DarkSeaGreen;
-            this.button1.Location = new System.Drawing.Point(729, 519);
+            this.button1.Location = new System.Drawing.Point(16, 17);
             this.button1.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(486, 137);
@@ -49,7 +48,7 @@ namespace AutoGif_windows
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(17F, 41F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1943, 1230);
+            this.ClientSize = new System.Drawing.Size(519, 170);
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(7, 8, 7, 8);
             this.Name = "main_window";
