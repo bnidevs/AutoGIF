@@ -8,14 +8,16 @@ import time
 
 
 FRAME_LIST = []
-maxRecordTime = 10
+maxRecordTime = 1
 FPS = 10
+delay = 1;
 
 def windowLoop(sct):
     cv2.namedWindow("Live", cv2.WINDOW_NORMAL)
     cv2.resizeWindow('Live',720,480)
     cv2.createButton("Start",startButton,None,cv2.QT_PUSH_BUTTON,0)
-    cv2.createTrackbar('Seconds', 'Live', 0, 100, onSliderChange)
+    cv2.createTrackbar('Seconds', 'Live', 1, 30, onSecondsChange)
+    cv2.createTrackbar('Delay', 'Live', 1, 30, onDelayChange)
     while(cv2.getWindowProperty('Live', cv2.WND_PROP_VISIBLE) != 0):
         img = sct.grab(sct.monitors[1])
         frame = np.array(img)
@@ -26,15 +28,13 @@ def windowLoop(sct):
         cv2.waitKey(1)
 
 
-
-
 def startButton():
     cv2.destroyAllWindows()
 
-def onSliderChange(value):
+def onSecondsChange(value):
     maxRecordTime = value
-    print(value)
-
+def onDelayChange(value):
+    delay = value
 
 def convertToGif(lst):
     for x in lst:
@@ -55,6 +55,7 @@ def main():
 
     countdown = maxRecordTime*FPS
     cv2.destroyAllWindows()
+    time.sleep(delay)
     while countdown > 0:
         sct_img = sct.grab(sct.monitors[1])
         sct_img_list.append(sct_img)
