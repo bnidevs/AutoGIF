@@ -44,8 +44,8 @@ def convertToGif(lst):
     global FRAME_LIST
     for x in lst:
         frame = np.array(x)
-        frame = cv2.resize(frame, (720,480))
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+        frame = cv2.resize(frame, (854,480))
+        #frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
         frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
         FRAME_LIST.append(frame)
     imageio.mimsave('output.gif', FRAME_LIST, fps=FPS)
