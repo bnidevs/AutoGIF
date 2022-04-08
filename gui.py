@@ -4,10 +4,11 @@ class App(tnk.Frame):
     def __init__(self,master=None):
         super().__init__(master)
         self.master = master
-        self.delayTime = 1;
-        self.recordTime = 1;
+        self.delayTime = 5;
+        self.recordTime = 5;
         self.delayBox = self.createTextBox(0,0)
         self.recordBox = self.createTextBox(0,0)
+        self.preview = True
 
     def run(self):
         button1 = self.createButton('Set', self.setDelay,7,1 )
@@ -18,20 +19,21 @@ class App(tnk.Frame):
         textBox2 = self.createTextBox(23,1)
         label2 = self.createLabel("Record Time",11,1)
 
-        button3 = self.createButton('Confirm', self.closeWindow,7,1)
+        button3 = self.createButton('Preview', self.closeWindow,7,1)
+        button4 = self.createButton('Record', self.record,7,1)
         self.delayBox = textBox1
         self.recordBox = textBox2
-
-        label1.pack()
-        textBox1.pack()
-        button1.pack()
+    
+        
+        
         self.placeItem(button1,225,30)
         self.placeItem(textBox1,30,30)
         self.placeItem(label1,30,12)
         self.placeItem(button2,225,70)
         self.placeItem(textBox2,30,70)
         self.placeItem(label2,30,52)
-        self.placeItem(button3,225,110)
+        self.placeItem(button4,225,110)
+        self.placeItem(button3,30,110)
         self.mainloop()
 
     def placeItem(self, item, xcoord, ycoord):
@@ -61,4 +63,6 @@ class App(tnk.Frame):
 
     def setRecord(self):
         self.recordTime = int(self.recordBox.get(1.0,'end'))
-
+    def record(self):
+        self.preview = False
+        self.master.destroy()

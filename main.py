@@ -21,22 +21,23 @@ def windowLoop(sct):
     global MAXRECORDTIME
     global DELAY
     ap = gui.App(master=master)
-    ap.run()
+    ap.run() 
     MAXRECORDTIME = ap.recordTime
     DELAY = ap.delayTime
-    cv2.namedWindow("Preview")
-    cv2.resizeWindow('Preview',720,480)
+    if (ap.preview == True):
+        
+        cv2.namedWindow("Preview")
+        cv2.resizeWindow('Preview',720,480)
     
-    
-    while(cv2.getWindowProperty('Preview', cv2.WND_PROP_VISIBLE) != 0):
-        img = sct.grab(sct.monitors[1])
-        frame = np.array(img)
-        frame = cv2.resize(frame,(720,480))
-        frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
-        frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-        cv2.imshow('Preview',frame)
-        if cv2.waitKey(1) == ord('q'):
-            break
+        while(cv2.getWindowProperty('Preview', cv2.WND_PROP_VISIBLE) != 0):
+            img = sct.grab(sct.monitors[1])
+            frame = np.array(img)
+            frame = cv2.resize(frame,(720,480))
+            frame = cv2.cvtColor(frame, cv2.COLOR_RGB2BGR)
+            frame = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            cv2.imshow('Preview',frame)
+            if cv2.waitKey(1) == ord('q'):
+                break
 
 def convertToGif(lst):
     global FPS
@@ -61,10 +62,7 @@ def main():
 
     countdown = MAXRECORDTIME*FPS
     cv2.destroyAllWindows()
-    while DELAY > 0:
-        time.sleep(1)
-        #print(DELAY)
-        DELAY -= 1
+    time.sleep(DELAY)
     print("\nRecording...\n")
     while countdown > 0:
         sct_img = sct.grab(sct.monitors[1])
